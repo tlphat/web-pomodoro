@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  display: table;
+  width: 30%;
+  min-width: 350px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("assets/background.jpg");
+  background-size: cover;
+  
+}
+
+.main-container {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-box {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+}
+
+#time {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+button {
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;;
+}
+
+#focus-button {
+  background-color: green;
+}
+
+#focus-button:hover {
+  background-color: #3D8361;
+}
+
+#focus-button:active {
+  background-color: #D6CDA4;
+  color: black;
+}
+
+#short-break-button {
+  background-color: orangered;
+}
+
+#short-break-button:hover {
+  background-color: orange;
+}
+
+#short-break-button:active {
+  background-color: #FFD384;
+  color: black;
+}
+
+#long-break-button {
+  background-color: purple;
+}
+
+#long-break-button:hover {
+  background-color: blueviolet;
+}
+
+#long-break-button:active {
+  background-color: #AAC4FF;
+  color: black;
+}
+
+#stop-button {
+  display: block;
+  margin: 10px auto 0 auto;
+  font-size: 20px;
+  background-color: red;
+}
+
+#stop-button:hover {
+  background-color: #E64848;
+}
+
+#stop-button:active {
+  background-color: #EA7AD7;
+  color: black;
+}
