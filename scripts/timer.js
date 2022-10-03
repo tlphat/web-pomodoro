@@ -10,6 +10,7 @@ class Timer {
       this.timeText.display(value--);
       if (value < 0) {
         clearInterval(id);
+        setTimeout(() => alert("Times up"), 500);
       }
     }, 1000);
     this.id = id;
