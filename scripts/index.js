@@ -1,5 +1,5 @@
 import Timer from './timer.js';
-import TimeText from './timeText.js';
+import TimeDisplay from './timeDisplay.js';
 import Converter from './converter.js';
 
 const focusButton = document.getElementById("focus-button");
@@ -7,9 +7,7 @@ const shortBreakButton = document.getElementById("short-break-button");
 const longBreakButton = document.getElementById("long-break-button");
 const stopButton = document.getElementById("stop-button");
 
-const time = document.getElementById("time");
-
-const timeText = new TimeText(time, new Converter());
+const timeText = new TimeDisplay(new Converter());
 const timer = new Timer(timeText);
 
 focusButton.onclick = function () {
